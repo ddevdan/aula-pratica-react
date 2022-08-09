@@ -12,7 +12,7 @@ function ComponentePai() {
   const [color, setColor] = React.useState(true);
 
   const handleClick = () => {
-    const pRandom = parseInt(Math.random() * (2 - 0 + 1), 10);
+    const pRandom = Math.floor(Math.random() * (2 - 0 + 1), 10);
     const corAtual = COLORS[pRandom];
     setColor(corAtual);
   };

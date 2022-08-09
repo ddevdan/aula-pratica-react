@@ -25,9 +25,8 @@ function ComponentePai() {
    * - Esse estado será usado para alterar a cor do botão toda vez que ele for clicado
    */
 
-
   const handleClick = () => {
-    const pRandom = parseInt(Math.random() * (2 - 0 + 1), 10);
+    const pRandom = Math.floor(Math.random() * (2 - 0 + 1), 10);
     const corAtual = COLORS[pRandom];
 
     /**
@@ -40,6 +39,8 @@ function ComponentePai() {
   return (
     <div>
       {/* As alterações visuais só acontecem quando usamos o state * */}
+      {/* TODO
+          - Passe o estado como parametro da prop "cor" */}
       <ButtonFilho cor="red" handleClick={handleClick} />
     </div>
 
