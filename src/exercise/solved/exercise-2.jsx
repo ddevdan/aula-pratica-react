@@ -1,12 +1,12 @@
 import React from 'react';
 
 function ButtonFilho(props) {
-  return <button style={{ background: props.cor }} type="button">{props.cor}</button>;
+  return <button className={`sbtn  key-btn  ${props.cor}-btn`} type="button">{props.cor}</button>;
 }
 
 function ComponentePai() {
   return (
-    <div>
+    <div className="wrap-buttons">
       <ButtonFilho cor="red" />
       <ButtonFilho cor="blue" />
     </div>

@@ -8,7 +8,7 @@ function ButtonFilho({ cor }) {
    */
 
   return (
-    <button style={{ background: cor }} type="button" onClick={() => {}}>
+    <button className={`sbtn  key-btn  ${cor}-btn`} type="button" onClick={() => {}}>
       {cor}
     </button>
   );

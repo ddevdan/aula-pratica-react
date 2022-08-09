@@ -10,15 +10,15 @@ function ButtonFilho() {
    *
    * TODO
    * - Passe "props" como parametro da função ButtonFilho
-   * - Tente trocar a palavra "red" por props.cor
+   * - Tente trocar a string "red" por props.cor
    */
 
-  return <button style={{ background: 'red' }} type="button">red</button>;
+  return <button className={`sbtn  key-btn  ${'red'}-btn`} type="button">red</button>;
 }
 
 function ComponentePai() {
   return (
-    <div>
+    <div className="wrap-buttons">
       <ButtonFilho cor="red" />
       <ButtonFilho cor="blue" />
     </div>

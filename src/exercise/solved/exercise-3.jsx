@@ -2,7 +2,7 @@ import React from 'react';
 
 function ButtonFilho({ cor, handleClick }) {
   return (
-    <button style={{ background: cor }} type="button" onClick={handleClick}>
+    <button className={`sbtn  key-btn  ${cor}-btn`}  type="button" onClick={handleClick}>
       {cor}
     </button>
   );

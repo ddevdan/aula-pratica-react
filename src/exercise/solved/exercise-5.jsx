@@ -4,7 +4,7 @@ import { COLORS } from '../../constants.js';
 
 function ButtonFilho({ cor, handleClick }) {
   return (
-    <button style={{ background: cor }} type="button" onClick={handleClick}>
+    <button className={`sbtn  key-btn  ${cor}-btn`} type="button" onClick={handleClick}>
       {cor}
     </button>
   );
@@ -20,14 +20,13 @@ function ComponentePai() {
   };
 
   /**
-   * Troque a cor yellowgreen por "blue"
+   * Troque a cor black por "blue"
    */
-  if (cor === 'yellowgreen') {
+  if (cor === 'black') {
     return (
-      <div>
+      <div className="wrap-buttons">
         <h3>
-          Cor atual:
-          {cor}
+          Se for preto, retorna blue
         </h3>
         <ButtonFilho cor="blue" handleClick={handleClick} />
       </div>
@@ -36,17 +35,26 @@ function ComponentePai() {
 
   return (
     <div>
-      <h3>
-        Cor atual:
-        {cor}
-      </h3>
-      {/* Troque a cor BlueViolet por yellow, caso não seja ela, troque por "red" */}
-      {cor === 'BlueViolet'
-        ? <ButtonFilho cor="yellow" handleClick={handleClick} />
-        : <ButtonFilho cor="red" handleClick={handleClick} />}
+      <div className="wrap-buttons">
+        <h3>
+          Se for yellow, troca por blue, se não for, trocar por red
+        </h3>
+        {/* Troque a cor "yellow" por "blue", caso não seja ela, troque por "red" */}
+        {cor === 'yellow'
+          ? <ButtonFilho cor="blue" handleClick={handleClick} />
+          : <ButtonFilho cor="red" handleClick={handleClick} />}
+      </div>
 
-      {/* Renderize somente se a cor for "Deep Orange" */}
-      {cor === 'DarkBlue' && <ButtonFilho cor={cor} handleClick={handleClick} />}
+      {cor === 'pink' && (
+      <div className="wrap-buttons">
+        <h3>
+          Condição:
+          Renderiza somente se for pink
+        </h3>
+        {/* Renderize somente se a cor for "pink" */}
+        <ButtonFilho cor={cor} handleClick={handleClick} />
+      </div>
+      )}
     </div>
 
   );

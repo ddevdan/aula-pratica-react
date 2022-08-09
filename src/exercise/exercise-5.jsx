@@ -4,7 +4,7 @@ import { COLORS } from '../constants';
 
 function ButtonFilho({ cor, handleClick }) {
   return (
-    <button style={{ background: cor }} type="button" onClick={handleClick}>
+    <button className={`btn  key-btn ${cor}-btn`} type="button" onClick={handleClick}>
       {cor}
     </button>
   );
@@ -20,17 +20,20 @@ function ComponentePai() {
   };
 
   /**
-   * Troque a cor yellowgreen por "blue"
+   * Troque a cor black por "blue"
    * TODO
-   * - Verifique se a cor === "yellowgreen", se sim, retorne o botão com a cor "blue" como prop
+   * - Verifique se a cor === "black", se sim, retorne o botão com a cor "blue" como prop
    */
   if (cor === '') {
     return (
-      <div>
+      <div className="wrap-buttons">
         <h3>
-          Cor atual:
-          {cor}
+          Se for preto, retorna blue
         </h3>
+        {/*
+         * TODO
+         * - Não esqueça de trocar aqui também
+        */}
         <ButtonFilho cor={cor} handleClick={handleClick} />
       </div>
     );
@@ -38,17 +41,26 @@ function ComponentePai() {
 
   return (
     <div>
-      <h3>
-        Cor atual:
-        {cor}
-      </h3>
-      {/** TODO
-          - Troque a cor BlueViolet por yellow, caso não seja ela, troque por "red" */}
-      {cor === '' ? <ButtonFilho cor={cor} handleClick={handleClick} /> : <ButtonFilho cor={cor} handleClick={handleClick} />}
+      <div className="wrap-buttons">
+        <h3>
+          Se for yellow, troca por blue, se não for, trocar por red
+        </h3>
+        {/** TODO
+          - Troque a cor "yellow" por "blue", caso não seja ela, troque por "red" */}
+        {cor === '' ? <ButtonFilho cor={cor} handleClick={handleClick} /> : <ButtonFilho cor={cor} handleClick={handleClick} />}
+      </div>
 
       {/* TODO
-          - Renderize somente se a cor for "DarkBlue" */}
-      {cor === '' && <ButtonFilho cor={cor} handleClick={handleClick} />}
+          - Renderize somente se a cor for "pink" */}
+      {cor === '' && (
+      <div className="wrap-buttons">
+        <h3>
+          Condição:
+          Renderiza somente se for pink
+        </h3>
+        <ButtonFilho cor={cor} handleClick={handleClick} />
+      </div>
+      )}
     </div>
 
   );
