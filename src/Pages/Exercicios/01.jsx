@@ -7,7 +7,7 @@ export default function ListaExercicio() {
   const [showSolution, setShowSolution] = React.useState(false);
   return (
     <div className="exercise__list">
-      <TemplateExercicio key={1} position={1}>
+      <TemplateExercicio key={1} position={1} showSolution={showSolution}>
         {showSolution ? <Solution1 /> : <Exercise1 />}
       </TemplateExercicio>
       <button type="button" onClick={() => setShowSolution((prev) => !prev)}>
