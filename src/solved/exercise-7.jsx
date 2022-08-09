@@ -24,6 +24,7 @@ function ListCats() {
 
   React.useEffect(() => {
     fetch(CAT_URL).then((res) => res.json()).then((response) => setCats(response));
+    return () => setCats([]);
   }, []); // nesse caso o request será feito assim que o componente for montado
 
   /** Caso a usuária click no botão, um novo request será feito para a API   */

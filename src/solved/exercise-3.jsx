@@ -14,8 +14,8 @@ function ComponentePai() {
 
   return (
     <div>
-      <ButtonFilho cor="red" onClick={handleClick} />
-      <ButtonFilho cor="blue" onClick={handleClick} />
+      <ButtonFilho cor="red" handleClick={handleClick} />
+      <ButtonFilho cor="blue" handleClick={handleClick} />
     </div>
   );
 }

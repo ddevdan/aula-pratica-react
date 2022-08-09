@@ -22,17 +22,31 @@ function ComponentePai() {
   /**
    * Troque a cor yellowgreen por "blue"
    */
-  if (cor === 'yellowgreen') return <ButtonFilho cor="blue" handleClick={handleClick} />;
+  if (cor === 'yellowgreen') {
+    return (
+      <div>
+        <h3>
+          Cor atual:
+          {cor}
+        </h3>
+        <ButtonFilho cor="blue" handleClick={handleClick} />
+      </div>
+    );
+  }
 
   return (
     <div>
-      {/* Troque a cor Deep Purple por yellow, caso não seja ela, troque por "red" */}
-      {cor === 'Deep Purple'
+      <h3>
+        Cor atual:
+        {cor}
+      </h3>
+      {/* Troque a cor BlueViolet por yellow, caso não seja ela, troque por "red" */}
+      {cor === 'BlueViolet'
         ? <ButtonFilho cor="yellow" handleClick={handleClick} />
         : <ButtonFilho cor="red" handleClick={handleClick} />}
 
       {/* Renderize somente se a cor for "Deep Orange" */}
-      {cor === 'Deep Orange' && <ButtonFilho cor={cor} handleClick={handleClick} />}
+      {cor === 'DarkBlue' && <ButtonFilho cor={cor} handleClick={handleClick} />}
     </div>
 
   );

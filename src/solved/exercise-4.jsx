@@ -3,6 +3,7 @@ import React from 'react';
 import { COLORS } from '../constants';
 
 function ButtonFilho({ cor, handleClick }) {
+  console.log(cor);
   return (
     <button style={{ background: cor }} type="button" onClick={handleClick}>
       {cor}
@@ -16,6 +17,7 @@ function ComponentePai() {
   const handleClick = () => {
     const pRandom = Math.floor(Math.random() * (2 - 0 + 1), 10);
     const corAtual = COLORS[pRandom];
+    console.log(corAtual);
     setCor(corAtual);
   };
 

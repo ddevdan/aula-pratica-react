@@ -24,16 +24,30 @@ function ComponentePai() {
    * TODO
    * - Verifique se a cor === "yellowgreen", se sim, retorne o botão com a cor "blue" como prop
    */
-  if (cor === '') return <ButtonFilho cor={cor} handleClick={handleClick} />;
+  if (cor === '') {
+    return (
+      <div>
+        <h3>
+          Cor atual:
+          {cor}
+        </h3>
+        <ButtonFilho cor={cor} handleClick={handleClick} />
+      </div>
+    );
+  }
 
   return (
     <div>
+      <h3>
+        Cor atual:
+        {cor}
+      </h3>
       {/** TODO
-          - Troque a cor Deep Purple por yellow, caso não seja ela, troque por "red" */}
+          - Troque a cor BlueViolet por yellow, caso não seja ela, troque por "red" */}
       {cor === '' ? <ButtonFilho cor={cor} handleClick={handleClick} /> : <ButtonFilho cor={cor} handleClick={handleClick} />}
 
       {/* TODO
-          - Renderize somente se a cor for "Deep Orange" */}
+          - Renderize somente se a cor for "DarkBlue" */}
       {cor === '' && <ButtonFilho cor={cor} handleClick={handleClick} />}
     </div>
 

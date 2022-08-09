@@ -14,7 +14,7 @@ function ListaDeItems() {
    *
    * Passar index pode causar problemas, veja mais nesse blogpost: https://kentcdodds.com/blog/understanding-reacts-key-prop
    */
-  return PHOTOS.map((pic) => <Item pic={pic} key={photo.id} />);
+  return PHOTOS.map((pic) => <Item pic={pic} key={pic.id} />);
 }
 
 export default ListaDeItems;
