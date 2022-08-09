@@ -11,7 +11,7 @@ function ButtonFilho({ cor, handleClick }) {
 }
 
 function ComponentePai() {
-  const [cor, setCor] = React.useState(COLORS[0]);
+  const [cor, setCor] = React.useState('red');
 
   const handleClick = () => {
     const pRandom = Math.floor(Math.random() * (2 - 0 + 1), 10);
