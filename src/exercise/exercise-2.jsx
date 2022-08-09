@@ -2,7 +2,7 @@ import React from 'react';
 
 function ButtonFilho() {
   /**
-   * Componente podem ter PROPS, props são propriedades dos componentes
+   * Componentes podem ter PROPS, props são propriedades dos componentes
    * e podem ser passadas no momento em que são chamados.
    *
    * Props são essenciais para o React, com elas conseguimos customizar nossos componentes.

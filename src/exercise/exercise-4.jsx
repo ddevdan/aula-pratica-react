@@ -11,7 +11,7 @@ function ButtonFilho({ cor, handleClick }) {
 }
 
 function ComponentePai() {
-  /** State dão vida ao componente
+  /** States dão vida ao componente
    *
    * Com ele conseguimos mudar a aparencia do botão após uma interação do usuário
    * Nesse exercicio você vai conseguir mudar a cor do botão toda vez que clicar nele.
