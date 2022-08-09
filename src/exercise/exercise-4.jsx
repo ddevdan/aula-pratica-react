@@ -32,7 +32,7 @@ function ComponentePai() {
     /**
      * TODO
      * - Chame a função de alteração do estado aqui e passe a corAtual como parametro
-     * DICA: setColor();
+     * DICA: setCor() ou setState()
      */
   };
 
@@ -40,7 +40,7 @@ function ComponentePai() {
     <div>
       {/* As alterações visuais só acontecem quando usamos o state * */}
       {/* TODO
-          - Passe o estado como parametro da prop "cor" */}
+          - Passe o state como parametro da prop "cor" */}
       <ButtonFilho cor="red" handleClick={handleClick} />
     </div>
 

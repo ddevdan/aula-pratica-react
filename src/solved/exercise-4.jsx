@@ -9,18 +9,18 @@ function ButtonFilho({ cor, handleClick }) {
 }
 
 function ComponentePai() {
-  const [color, setColor] = React.useState(true);
+  const [cor, setCor] = React.useState(COLORS[0]);
 
   const handleClick = () => {
     const pRandom = Math.floor(Math.random() * (2 - 0 + 1), 10);
     const corAtual = COLORS[pRandom];
-    setColor(corAtual);
+    setCor(corAtual);
   };
 
   return (
     <div>
       {/* As alterações só acontecem porque estamos usando o state * */}
-      <ButtonFilho cor={color} handleClick={handleClick} />
+      <ButtonFilho cor={cor} handleClick={handleClick} />
     </div>
 
   );
