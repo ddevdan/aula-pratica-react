@@ -1,6 +1,6 @@
 import React from 'react';
 
-const COLORS = ['Deep Orange', 'Deep Purple', 'yellowgreen'];
+import { COLORS } from '../constants';
 
 function ButtonFilho({ cor, handleClick }) {
   <button style={{ background: cor }} type="button" onClick={handleClick}>
