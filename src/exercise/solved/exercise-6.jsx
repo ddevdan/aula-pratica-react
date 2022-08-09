@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PHOTOS } from '../constants';
+import { PHOTOS } from '../../constants.js';
 
 function Item({ pic }) {
   return <img src={pic.download_url} alt={pic.author} />;

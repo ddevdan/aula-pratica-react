@@ -1,7 +1,7 @@
 import React from 'react';
 import TemplateExercicio from './TemplateExercicio';
 import Exercise2 from '../../exercise/exercise-2';
-import Solution2 from '../../solved/exercise-2';
+import Solution2 from '../../exercise/solved/exercise-2';
 
 
 export default function ListaExercicio() {

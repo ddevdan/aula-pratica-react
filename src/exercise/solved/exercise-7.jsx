@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CAT_URL, PHOTOS } from '../constants';
+import { CAT_URL, PHOTOS } from '../../constants.js';
 
 function Cat({ cat }) {
   return (
