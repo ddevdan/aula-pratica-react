@@ -6,11 +6,10 @@ function ButtonFilho() {
    * e podem ser passadas no momento em que são chamados.
    *
    * Props são essenciais para o React, com elas conseguimos customizar nossos componentes.
-   *
    * O componente recebe as "props" como parametro
    *
+   * TODO
    * - Passe "props" como parametro da função ButtonFilho
-   * - Pegue a prop "cor" dentro do parametro "props"
    * - Tente trocar a palavra "red" por props.cor
    */
 
