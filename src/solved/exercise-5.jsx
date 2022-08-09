@@ -3,9 +3,11 @@ import React from 'react';
 import { COLORS } from '../constants';
 
 function ButtonFilho({ cor, handleClick }) {
-  <button style={{ background: cor }} type="button" onClick={handleClick}>
-    {cor}
-  </button>;
+  return (
+    <button style={{ background: cor }} type="button" onClick={handleClick}>
+      {cor}
+    </button>
+  );
 }
 
 function ComponentePai() {

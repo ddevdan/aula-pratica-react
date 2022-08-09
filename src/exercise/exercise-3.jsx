@@ -7,9 +7,11 @@ function ButtonFilho({ cor }) {
    * - Substitua o conteúdo do onClick pelo nome da prop que você definiu
    */
 
-  <button style={{ background: cor }} type="button" onClick={() => {}}>
-    {cor}
-  </button>;
+  return (
+    <button style={{ background: cor }} type="button" onClick={() => {}}>
+      {cor}
+    </button>
+  );
 }
 
 function ComponentePai() {

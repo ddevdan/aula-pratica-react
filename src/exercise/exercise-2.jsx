@@ -13,7 +13,7 @@ function ButtonFilho() {
    * - Tente trocar a palavra "red" por props.cor
    */
 
-  <button style={{ background: 'red' }} type="button">red</button>;
+  return <button style={{ background: 'red' }} type="button">red</button>;
 }
 
 function ComponentePai() {

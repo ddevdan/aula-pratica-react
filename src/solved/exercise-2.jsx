@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ButtonFilho(props) {
-  <button style={{ background: props.cor }} type="button">{props.cor}</button>;
+  return <button style={{ background: props.cor }} type="button">{props.cor}</button>;
 }
 
 function ComponentePai() {
