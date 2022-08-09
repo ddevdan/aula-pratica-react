@@ -1,7 +1,7 @@
 import React from 'react';
 import TemplateExercicio from './TemplateExercicio';
-import Exercise7 from '../../exercise/exercise-7';
-import Solution7 from '../../exercise/solved/exercise-7';
+import Exercise7 from '../../exercises/exercise-7';
+import Solution7 from '../../exercises/solved/exercise-7';
 
 export default function ListaExercicio() {
   const [showSolution, setShowSolution] = React.useState(false);

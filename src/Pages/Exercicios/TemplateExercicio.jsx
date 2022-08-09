@@ -19,9 +19,10 @@ export default function TemplateExercicio({
         {children}
       </div>
 
-      {!isFirst && <Link to={`/exercises/${anterior}`}>ANTERIOR</Link>}
-      {!isLast && <Link to={`/exercises/${proximo}`}>PROXIMO</Link>}
-
+      <div className="navigation">
+        {!isFirst ? <Link to={`/exercises/${anterior}`}>ANTERIOR</Link> : <div />}
+        {!isLast ? <Link to={`/exercises/${proximo}`}>PROXIMO</Link> : <div />}
+      </div>
     </div>
   );
 }

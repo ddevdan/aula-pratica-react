@@ -9,7 +9,7 @@ function Cat({ cat }) {
         Futuristic Name:
         {cat.id}
       </h3>
-      <img src={cat.url} alt="um gatinho lindo" />
+      <img width="200" src={cat.url} alt="um gatinho lindo" />
     </div>
   );
 }
@@ -22,17 +22,19 @@ function ListCats() {
    * Recomendação de leitura :) https://bugged.dev/post/The-useEffect-Cheatsheet
    */
 
-  React.useEffect(() => {
+  React.useEffect(
+    () =>
     /**
      * TODO
      * - O fetch deve ser feito aqui
      * ex: fetch(CAT_URL).then((res) => res.json()).then((response) => setCats(response));
      */
 
-    return () => {
-      setCats([]);
-    };
-  }, []); // nesse caso o request será feito assim que o componente for montado
+      () => {
+        setCats([]);
+      },
+    [],
+  ); // nesse caso o request será feito assim que o componente for montado
 
   /** Caso a usuária click no botão, um novo request será feito para a API   */
   const handleRefresh = () => {
@@ -46,11 +48,11 @@ function ListCats() {
   return (
     <div>
       <div>
+        <button type="button" className="button__refresh" onClick={handleRefresh}>REFRESH LISTA</button>
         <h3>Lista de Gatineos</h3>
         {cats.map((cat) => <Cat cat={cat} key={cat.id} />)}
       </div>
 
-      <button onClick={handleRefresh}>REFRESH LISTA</button>
     </div>
   );
 }

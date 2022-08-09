@@ -9,7 +9,7 @@ function Cat({ cat }) {
         Futuristic Name:
         {cat.id}
       </h3>
-      <img src={cat.url} alt="um gatinho lindo" />
+      <img width="200" src={cat.url} alt="um gatinho lindo" />
     </div>
   );
 }
@@ -35,11 +35,11 @@ function ListCats() {
   return (
     <div>
       <div>
+        <button type="button" className="button__refresh" onClick={handleRefresh}>REFRESH LISTA</button>
         <h3>Lista de Gatineos</h3>
         {cats.map((cat) => <Cat cat={cat} key={cat.id} />)}
       </div>
 
-      <button onClick={handleRefresh}>REFRESH LISTA</button>
     </div>
   );
 }

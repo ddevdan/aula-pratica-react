@@ -3,7 +3,7 @@ import React from 'react';
 import { PHOTOS } from '../constants';
 
 function Item({ pic }) {
-  return <img src={pic.download_url} alt={pic.author} />;
+  return <img width="200" src={pic.download_url} alt={pic.author} />;
 }
 
 function ListaDeItems() {

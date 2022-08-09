@@ -9,5 +9,5 @@ function MeuPrimeiroComponenteReact() {
 
 }
 
-MeuPrimeiroComponenteReact.displayName = 'exercise';
+MeuPrimeiroComponenteReact.displayName = 'exercises';
 export default MeuPrimeiroComponenteReact;
