@@ -19,6 +19,7 @@ function ComponentePai() {
    *
    *  TODO
    *  - Passe a função handleClick como prop do ButtonFilho
+   *  Ex: <ButtonFilho onClick={handleClick} />
    */
   const handleClick = () => alert('Você clicou no botão');
 
