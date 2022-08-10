@@ -42,7 +42,9 @@ function ComponentePai() {
     <div>
       {/* As alterações visuais só acontecem quando usamos o state * */}
       {/* TODO
-          - Passe o state como parametro da prop "cor" */}
+          - Passe o state como parametro da prop "cor"
+          EX: cor={state}
+       */}
       <ButtonFilho cor="red" handleClick={handleClick} />
     </div>
 
