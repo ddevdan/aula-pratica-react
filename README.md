@@ -1,4 +1,4 @@
-<div align="center">
+<div align="left">
 
 
   <h1>
@@ -8,22 +8,9 @@
         Engenharia de Software - UFPE
     </p>
 
-<!-- Badges -->
 
 
-<!-- Table of Contents -->
-# :notebook_with_decorative_cover: Table of Contents
-- [About the Project](#star2-about-the-project)
-  * [Exercicio 1](#exercicio-1)
-  * [Exercicio 2](#exercicio-2)
-  * [Exercicio 3](#exercicio-3)
-  * [Exercicio 4](#exercicio-4)
-  * [Exercicio 5](#exercicio-5)
-  * [Exercicio 6](#exercicio-6)
-  * [Exercicio 7](#exercicio-7)
-  
 
-----
 <!-- About the Project -->
 ## :star2: About the Project
 
