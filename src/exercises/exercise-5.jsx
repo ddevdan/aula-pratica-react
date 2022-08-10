@@ -33,6 +33,7 @@ function ComponentePai() {
         {/*
          * TODO
          * - Não esqueça de trocar aqui também
+            EX cor="blue"
         */}
         <ButtonFilho cor={cor} handleClick={handleClick} />
       </div>
