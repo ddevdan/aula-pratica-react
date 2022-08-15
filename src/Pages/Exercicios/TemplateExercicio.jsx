@@ -9,7 +9,7 @@ export default function TemplateExercicio({
   const isLast = proximo > 7;
   const isFirst = anterior < 1;
   return (
-    <div className="">
+    <>
       <h1>{title}</h1>
       <h2>
         {showSolution ? 'Solução ' : 'Exercício '}
@@ -23,6 +23,6 @@ export default function TemplateExercicio({
         {!isFirst ? <Link to={`/exercises/${anterior}`}>ANTERIOR</Link> : <div />}
         {!isLast ? <Link to={`/exercises/${proximo}`}>PROXIMO</Link> : <div />}
       </div>
-    </div>
+    </>
   );
 }
